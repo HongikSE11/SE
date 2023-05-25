@@ -1,3 +1,4 @@
+//헤더선언
 #pragma once
 #include "UserInfo.h"
 #include "loginUI.h"
