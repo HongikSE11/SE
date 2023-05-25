@@ -1,3 +1,4 @@
+//í—¤ë”ì„ ì–¸
 #include "SignOut.h"
 #include "SignOutUI.h"
 #include <algorithm>
@@ -12,18 +13,18 @@ using namespace std;
 
 void SignOut::ShowUserInfo() {
 
-    vector<UserInfo> userlist;		//ÀÏ¹İ È¸¿ø ¸®½ºÆ® 
-	vector<UserInfo> companylist;	//È¸»ç È¸¿ø ¸®½ºÆ®
-	SignOutUI signoutui;			//boundary Å¬·¡½º ÀÎ½ºÅÏ½º
+    vector<UserInfo> userlist;		//ì¼ë°˜ íšŒì› ë¦¬ìŠ¤íŠ¸ 
+	vector<UserInfo> companylist;	//íšŒì‚¬ íšŒì› ë¦¬ìŠ¤íŠ¸
+	SignOutUI signoutui;			//boundary í´ë˜ìŠ¤ ì¸ìŠ¤í„´ìŠ¤
 
-	signoutui.startinterface();		//ÀÎÅÍÆäÀÌ½º ½ÃÀÛ
-	signoutui.selectCase();			//È¸¿ø ID ÀÔ·Â ÇÔ¼ö
+	signoutui.startinterface();		//ì¸í„°í˜ì´ìŠ¤ ì‹œì‘
+	signoutui.selectCase();			//íšŒì› ID ì…ë ¥ í•¨ìˆ˜
 
-	string showid=signoutui.ID;		//Å»ÅğÇÏ·Á´Â È¸¿ø ID
+	string showid=signoutui.ID;		//íƒˆí‡´í•˜ë ¤ëŠ” íšŒì› ID
     UserInfo userinfo;
 
-    userinfo.deleteUserInfo(showid);	//È¸¿ø Å»Åğ
-	signoutui.ShowCompleteMessage();	//¿Ï·á ¸Ş¼¼Áö Ãâ·Â
+    userinfo.deleteUserInfo(showid);	//íšŒì› íƒˆí‡´
+	signoutui.ShowCompleteMessage();	//ì™„ë£Œ ë©”ì„¸ì§€ ì¶œë ¥
 	
 
 
