@@ -4,6 +4,6 @@
 
 void AddRecuritInformation::addNewInfo(std::string input_job, int input_n_member, std::string input_due_date)
 {
-	RecuritInfo::addInfo(input_job, input_n_member, input_due_date); //Ã¤¿ë Á¤º¸ µî·Ï ÇÔ¼ö È£Ãâ
+	RecuritInfo::addInfo(input_job, input_n_member, input_due_date); //ì±„ìš© ì •ë³´ ë“±ë¡ í•¨ìˆ˜ í˜¸ì¶œ
 }
 
