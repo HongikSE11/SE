@@ -1,3 +1,4 @@
+//헤더선언
 #include "logout.h"
 void logout::selectCase(string ID)
 {
