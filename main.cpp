@@ -88,13 +88,13 @@ void doTask()
         case 2:
             switch (menu_level_2)
             {
-            case 1: //"2.1 로그인“ 메뉴 부분
+            case 1: //"2.1. 로그인“ 메뉴 부분
             {
                 login loginstart;
                 loginstart.loginstart();
                 break;
             }
-            case 2: //"2.2 로그아웃“ 메뉴 부분
+            case 2: //"2.2. 로그아웃“ 메뉴 부분
             {
                 logout logoutstart;
                 logoutstart logoutstart();
@@ -104,36 +104,40 @@ void doTask()
         case 3:
             switch (menu_level_2)
             {
-            case 1: //"3.1 채용 정보 등록“ 메뉴 부분
+            case 1: //"3.1. 채용 정보 등록“ 메뉴 부분
             {
-                
+                AddRecuritInfomationUI UI;
+                UI.startInterface();
+                UI.InputInfo();
                 break;
             }
-            case 2: //"3.2  등록된 채용 정보 조회“ 메뉴 부분
+            case 2: //"3.2.  등록된 채용 정보 조회“ 메뉴 부분
             {
-                //do something
+                CheckRecuritInfomationUI UI;
+                UI.startInterface();
+                UI.selectInfo();
                 break;
             }
             }
         case 4:
             switch (menu_level_2)
             {
-            case 1: //"4.1 채용 정보 검색“ 메뉴 부분
+            case 1: //"4.1. 채용 정보 검색“ 메뉴 부분
             {
                 //do something
                 break;
             }
-            case 2: //"4.2 채용 지원“ 메뉴 부분
+            case 2: //"4.2. 채용 지원“ 메뉴 부분
             {
                 //do something
                 break;
             }
-            case 3: //"4.3 지원 정보 조회“ 메뉴 부분
+            case 3: //"4.3. 지원 정보 조회“ 메뉴 부분
             {
                 //do something
                 break;
             }
-            case 4: //"4.4 지원 취소“ 메뉴 부분
+            case 4: //"4.4. 지원 취소“ 메뉴 부분
             {
                 //do something
                 break;
@@ -142,7 +146,7 @@ void doTask()
         case 5:
             switch (menu_level_2)
             {
-            case 1: //"5.1 지원 정보 통계“ 메뉴 부분
+            case 1: //"5.1. 지원 정보 통계“ 메뉴 부분
             {
                 //do something
                 break;
