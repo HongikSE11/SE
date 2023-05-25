@@ -1,4 +1,4 @@
-//상수선언
+//헤더선언
 #pragma once
 #include <iostream>
 #include <string>
