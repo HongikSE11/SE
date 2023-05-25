@@ -18,7 +18,7 @@ void SignOutUI::startinterface()
 
 void SignOutUI::selectCase() 
 {
-	cout << "회원아이디를 입력하시오 \n";
+	
 	FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
 	fscanf(in_fp, "%s,  ID); 
 }
@@ -27,5 +27,5 @@ void SignOutUI::selectCase()
 
 void SignOutUI::ShowCompleteMessage()
 {
-	cout << "회원 탈퇴가 완료 되었습니다. \n";
+	fprintf(out_fp, "1.2.회원탈퇴\n");
 }
