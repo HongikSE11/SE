@@ -2,8 +2,8 @@
 class AddRecuritInformationUI
 {
 public:
-	void inputInfo();			//Ã¤¿ë Á¤º¸ ÀÔ·Â ÇÔ¼ö
-	void startInterface();		//interface ½ÃÀÛ ÇÔ¼ö
-	void showCompleteMessage(); //¿Ï·á ¸Þ¼¼Áö Ãâ·Â ÇÔ¼ö
+	void inputInfo();			//ì±„ìš© ì •ë³´ ìž…ë ¥ í•¨ìˆ˜
+	void startInterface();			//interface ì‹œìž‘ í•¨ìˆ˜
+	void showCompleteMessage(); 		//ì™„ë£Œ ë©”ì„¸ì§€ ì¶œë ¥ í•¨ìˆ˜
 };
 
