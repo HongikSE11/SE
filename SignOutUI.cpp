@@ -1,3 +1,4 @@
+//Ìó§Îçî ÏÑ†Ïñ∏
 #include "SignOutUI.h"
 #include <string>
 #include <stdio.h>
@@ -7,13 +8,13 @@
 #include <fstream>
 using namespace std;
 void SignOutUI::startinterface() {
-	cout << "»∏ø¯≈ª≈ Ω√¿€\n";
+	cout << "ÌöåÏõêÌÉàÌá¥ ÏãúÏûë\n";
 
 
 }
 
 void SignOutUI::selectCase() {
-	cout << "»∏ø¯æ∆¿Ãµ∏¶ ¿‘∑¬«œΩ√ø¿ \n";
+	cout << "ÌöåÏõêÏïÑÏù¥ÎîîÎ•º ÏûÖÎ†•ÌïòÏãúÏò§ \n";
 
 	cin >> ID;
 
@@ -23,7 +24,7 @@ void SignOutUI::selectCase() {
 
 
 void SignOutUI::ShowCompleteMessage() {
-	cout << "»∏ø¯ ≈ª≈∞° øœ∑· µ«æ˙Ω¿¥œ¥Ÿ. \n";
+	cout << "ÌöåÏõê ÌÉàÌá¥Í∞Ä ÏôÑÎ£å ÎêòÏóàÏäµÎãàÎã§. \n";
 
 
 
