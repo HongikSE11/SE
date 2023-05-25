@@ -1,12 +1,13 @@
+// í—¤ë”ì„ ì–¸
 #pragma once
 #include "UserInfo.h"
 class SignOut
 {
 public:
-	void ShowUserInfo(); //È¸¿ø Å»ÅğÇÏ´Â È¸¿ø Á¤º¸ Ãâ·Â ÇÔ¼ö
+	void ShowUserInfo(); //íšŒì› íƒˆí‡´í•˜ëŠ” íšŒì› ì •ë³´ ì¶œë ¥ í•¨ìˆ˜
 	
-	static vector<UserInfo> userlist;	//ÀÏ¹İ È¸¿ø ¸®½ºÆ®
-	static vector<UserInfo> companylist; //È¸»ç È¸¿ø ¸®½ºÆ®
+	static vector<UserInfo> userlist;	//ì¼ë°˜ íšŒì› ë¦¬ìŠ¤íŠ¸
+	static vector<UserInfo> companylist; //íšŒì‚¬ íšŒì› ë¦¬ìŠ¤íŠ¸
 
 };
 
