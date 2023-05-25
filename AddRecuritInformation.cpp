@@ -1,3 +1,4 @@
+//헤더 선언
 #include "AddRecuritInformation.h"
 #include "RecuritInfo.h"
 #include <string.h>
