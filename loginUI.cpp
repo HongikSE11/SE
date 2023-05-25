@@ -18,6 +18,7 @@ void loginUI::startinterface() {
 void loginUI::ShowCompleteMessage() {
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
 	fprintf(out_fp, "\n");
+	cout << "회원 가입이 완료 되었습니다. \n";
 
 }
 
