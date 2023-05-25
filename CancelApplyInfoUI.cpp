@@ -1,3 +1,4 @@
+//í—¤ë” ì„ ì–¸
 #include "CancelApplyInfoUI.h"
 #include "CancelApplyInfoUI.h"
 #include "ApplyInfo.cpp"
@@ -12,7 +13,7 @@
 void CancelApplyInfoUI::startInterface()
 {
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-	fprintf(out_fp, "Áö¿ø Á¤º¸ Á¶È¸\n");
+	fprintf(out_fp, "4.4 ì§€ì› ì·¨ì†Œ");
 }
 
-//void CancelApplyInfoUI::selectInfo(){}
+
