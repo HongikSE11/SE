@@ -34,6 +34,7 @@ void SignUPUI::putInfo() {
 	fscanf(in_fp, "%s %s %s %s", name, num, ID, PW); 			
 	
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
+	fprintf(out_fp, "%s %s %s %s , name,num,ID,PW);
 	
 void SignUPUI::ShowCompleteMessage() {
 	cout << "회원 가입이 완료 되었습니다. \n";
