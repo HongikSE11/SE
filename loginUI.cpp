@@ -1,3 +1,4 @@
+//헤더 선언
 #include "loginUI.h"
 
 //상수 선언 
