@@ -1,45 +1,26 @@
 #include "SignOut.h"
 #include "SignOutUI.h"
-
+#include <algorithm>
 #include <string>
 #include <stdio.h>
 #include <iostream>
+#include <vector>
+#include "UserInfo.h"
 
 using namespace std;
 
 
-void SignOut::signOutstart() {
-
-	SignOutUI signoutui;
-	signupui.selectType();
-	ShowUserTypeInformation();
-	signupui.putInfo();
-	string ID = signupui.ID;
-	string name = signupui.name;
-	string PW = signupui.PW;
-	string num = signupui.num;
-	string usertype = signupui.usertype;
-	UserInfo newuser(usertype, name, num, ID, PW);
-
-	newuser.editUserInfo(newuser, usertype);
-	signupui.ShowCompleteMessage();
-
-
-
-
-
-
-
-
-}
 void SignOut::ShowUserInfo() {
-
-
-
-
-
-
-
+    vector<UserInfo> userlist;
+	vector<UserInfo> companylist;
+	SignOutUI signoutui;
+	signoutui.startinterface();
+	signoutui.selectCase();
+	string showid=signoutui.ID;
+    UserInfo userinfo;
+    userinfo.deleteUserInfo(showid);
+	signoutui.ShowCompleteMessage();
+	
 
 
 }

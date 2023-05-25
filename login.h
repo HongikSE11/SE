@@ -1,12 +1,13 @@
 #pragma once
 #include "UserInfo.h"
-class SignOut
+#include "loginUI.h"
+class login
 {
 public:
-	void ShowUserInfo();
-	
 	static vector<UserInfo> userlist;
 	static vector<UserInfo> companylist;
+	void cheakloginInfo(string ID, string PW);
+	void loginstart();
 
 };
 

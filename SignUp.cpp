@@ -24,6 +24,7 @@ void SignUp::signupstart() {
 	UserInfo newuser(usertype, name, num, ID, PW);
 
 	newuser.editUserInfo(newuser, usertype);
+	signupui.ShowCompleteMessage();
 	
 
 
