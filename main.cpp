@@ -148,7 +148,12 @@ void doTask()
             {
             case 1: //"5.1. 지원 정보 통계“ 메뉴 부분
             {
-                //do something
+                selectMemberUI selectMemberUIStart;
+                selectMember selectMemberStart;
+                
+                selectMemberUIStart.startInterface();
+                selectMemberStart.memberInfo();
+                selectMemberUIStart.showUserInfo();
                 break;
             }
             }
