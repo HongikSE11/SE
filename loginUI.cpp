@@ -28,4 +28,6 @@ void loginUI::inputinfo() {
 	cin >> PW;
 	FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
 	fscanf(in_fp, "%s %s", ID, PW); 
+	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
+	fprintf(out_fp, "%s %s", ID, PW);
 }
