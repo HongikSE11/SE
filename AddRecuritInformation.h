@@ -1,8 +1,9 @@
+//í—¤ë” ì„ ì–¸
 #pragma once
 #include <string.h>
 class AddRecuritInformation
 {
 public:
-	static void addNewInfo(std::string input_job, int input_n_member, std::string input_due_date); //»õ·Î¿î Ã¤¿ë Á¤º¸ ÀÔ·Â ÇÔ¼ö
+	static void addNewInfo(std::string input_job, int input_n_member, std::string input_due_date); //ìƒˆë¡œìš´ ì±„ìš© ì •ë³´ ì…ë ¥ í•¨ìˆ˜
 };
 
