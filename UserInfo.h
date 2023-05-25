@@ -22,7 +22,7 @@ class UserInfo
 		string ID;			//ID
 		string PW;			//passward
 			
-		static vector<UserInfo> userlist;	//일반 회원 리스트
+		static vector<UserInfo> userlist;		//일반 회원 리스트
 		static vector<UserInfo> companylist;	//회사 회원 리스트
 		static int loginstate;					//로그인 상태 
 
@@ -32,7 +32,7 @@ class UserInfo
 	    
 	    
 	    
-	    void getinfo();		//회원 정보 조회
+	    void getinfo();										//회원 정보 조회
 	    void editUserInfo(UserInfo user, string usertype);	//회원 리스트에 새로운 회원 추가
 		void deleteUserInfo(string showid);					//회원 리스트에서 회원 삭제
 		void putState(int state);							//로그인 여부
