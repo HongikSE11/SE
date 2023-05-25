@@ -2,6 +2,7 @@
 #pragma once
 #include "UserInfo.h"
 #include "loginUI.h"
+
 class login
 {
 public:
@@ -9,6 +10,5 @@ public:
 	static vector<UserInfo> companylist;
 	void cheakloginInfo(string ID, string PW);
 	void loginstart();
-
 };
 
