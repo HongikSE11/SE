@@ -2,35 +2,41 @@
 #include <string>
 #include <stdio.h>
 #include <iostream>
+// ÏÉÅÏàò ÏÑ†Ïñ∏
+#define MAX_STRING 32
+#define INPUT_FILE_NAME "input.txt"
+#define OUTPUT_FILE_NAME "output.txt"
 
 
 #include <fstream>
 using namespace std;
 void SignUPUI::startinterface() {
-	cout << "»∏ø¯∞°¿‘ Ω√¿€\n";
+	cout << "ÌöåÏõêÍ∞ÄÏûÖ ÏãúÏûë\n";
 
 	
 }
 
 void SignUPUI::selectType() {
-	cout << "»∏ø¯≈∏¿‘¿ª ∞Ì∏£Ω√ø¿ 1.»∏ªÁ»∏ø¯ 2.¿œπ›»∏ø¯\n";
-
-	cin >> usertype;
-
+	FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
+	cout << "ÌöåÏõêÌÉÄÏûÖÏùÑ Í≥†Î•¥ÏãúÏò§ 1.ÌöåÏÇ¨ÌöåÏõê 2.ÏùºÎ∞òÌöåÏõê\n";
+	fscanf(in_fp, "%s, usertype); 
+	
+	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
+	fprintf(out_fp, "1.1.ÌöåÏõêÍ∞ÄÏûÖ\n");
 }
 void SignUPUI::putInfo() {
-	cout << "¿Ã∏ß ,π¯»£ ,ID, PW ∏¶ ¿‘∑¬«œΩ√ø¿ \n";
+	cout << "Ïù¥Î¶Ñ ,Î≤àÌò∏ ,ID, PW Î•º ÏûÖÎ†•ÌïòÏãúÏò§ \n";
 	cin >> name;
 	cin >> num;
 	cin >> ID;
 	cin >> PW;
-
-
-
-
-}
+	FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
+	fscanf(in_fp, "%s %s %s %s", name, num, ID, PW); 			
+	
+	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
+	
 void SignUPUI::ShowCompleteMessage() {
-	cout << "»∏ø¯ ∞°¿‘¿Ã øœ∑· µ«æ˙Ω¿¥œ¥Ÿ. \n";
+	cout << "ÌöåÏõê Í∞ÄÏûÖÏù¥ ÏôÑÎ£å ÎêòÏóàÏäµÎãàÎã§. \n";
 	
 
 
