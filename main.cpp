@@ -8,7 +8,7 @@
 #include "CancelApplyInfo.h"
 #include "CancelApplyInfoUI.h"
 #include "CheckApplyInfomation.h"
-#incldue "CheckApplyInfomationUI.h"
+#include "CheckApplyInfomationUI.h"
 #include "CheckRecuritInfomation.h"
 #include "CheckRecuritInfomationUI.h"
 #include "Recurit.h"
