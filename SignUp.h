@@ -1,3 +1,4 @@
+//í—¤ë”ì„ ì–¸
 #pragma once
 #include "SignUpUI.h"
 #include "UserInfo.h"
@@ -10,7 +11,7 @@ using namespace std;
 class SignUp
 {
 public:
-	void signupstart();	//main ÇÔ¼ö¿¡¼­ ½ÇÇà½ÃÅ°´Â ÇÔ¼ö
-	void ShowUserTypeInformation();	//È¸¿ø Á¾·ù Ãâ·Â ÇÔ¼ö
+	void signupstart();	//main í•¨ìˆ˜ì—ì„œ ì‹¤í–‰ì‹œí‚¤ëŠ” í•¨ìˆ˜
+	void ShowUserTypeInformation();	//íšŒì› ì¢…ë¥˜ ì¶œë ¥ í•¨ìˆ˜
 };
 
