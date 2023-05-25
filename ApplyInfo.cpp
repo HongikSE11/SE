@@ -42,3 +42,9 @@ void ApplyInfo::cancelApply(int input_company_num)
 	}
 
 }
+
+void ApplyInfo::getApplyInfoDetails()
+{
+	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
+	fprintf(out_fp, "5.1 지원 정보 통계\n");	//파일 출력
+}
