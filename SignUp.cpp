@@ -5,18 +5,24 @@
 #include <iostream>
 
 using namespace std;
+
+// ìƒìˆ˜ ì„ ì–¸
+#define MAX_STRING 32
+#define INPUT_FILE_NAME "input.txt"
+#define OUTPUT_FILE_NAME "output.txt"
+
 void SignUp::ShowUserTypeInformation()
 {
-	cout << "ÀÏ¹İÈ¸¿øÀÔ´Ï´Ù"; //ÆÄÀÏ ÀÔÃâ·Â
+	cout << "ì¼ë°˜íšŒì›ì…ë‹ˆë‹¤"; //íŒŒì¼ ì…ì¶œë ¥
 };
 
 void SignUp::signupstart() {
 
 	SignUPUI signupui;
 
-	signupui.selectType();			//ui ¿¡¼­ Á¾·ù ¼±ÅÃ
-	ShowUserTypeInformation();		//¼±ÅÃµÈ È¸¿ø Á¾·ù Ãâ·Â
-	signupui.putInfo();				//ÇÊµå¿¡ ¸Â´Â Á¤º¸ ÀÔ·Â
+	signupui.selectType();			//ui ì—ì„œ ì¢…ë¥˜ ì„ íƒ
+	ShowUserTypeInformation();		//ì„ íƒëœ íšŒì› ì¢…ë¥˜ ì¶œë ¥
+	signupui.putInfo();				//í•„ë“œì— ë§ëŠ” ì •ë³´ ì…ë ¥
 
 
 	string ID = signupui.ID;
@@ -27,8 +33,8 @@ void SignUp::signupstart() {
 
 	UserInfo newuser(usertype, name, num, ID, PW);
 
-	newuser.editUserInfo(newuser, usertype);  //È¸¿øÁ¤º¸ ¸®½ºÆ®¿¡ »ğÀÔ
-	signupui.ShowCompleteMessage();			//¿Ï·áµÇ¾ú´Ù´Â ¸Ş¼¼Áö Ãâ·Â
+	newuser.editUserInfo(newuser, usertype);  //íšŒì›ì •ë³´ ë¦¬ìŠ¤íŠ¸ì— ì‚½ì…
+	signupui.ShowCompleteMessage();			//ì™„ë£Œë˜ì—ˆë‹¤ëŠ” ë©”ì„¸ì§€ ì¶œë ¥
 	
 
 
