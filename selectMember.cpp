@@ -5,5 +5,5 @@
 
 void selectMember::memberInfo() 
 {
-  
+  int user_type = logIn::cheakloginInfo();  //회원 종류 판별
 }
