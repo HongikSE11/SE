@@ -6,40 +6,45 @@
 
 
 UserInfo::UserInfo(string& type, string& name, string& num, string& id, string& pw) {
-    this->name = name;
-    this->num = num;
-    this->ID = id;
-    this->PW = pw;
-    this->usertype = type;
+    this->name = name;  //회원 이름
+    this->num = num;    //주민번호 or 사업자 번호
+    this->ID = id;      //회원 ID
+    this->PW = pw;      //회원 passward
+    this->usertype = type;  //회원 종류
 
 
 };
 
 void UserInfo::getinfo() {
-    cout << "회원정보 받아오기\n";
+    cout << "회원정보 받아오기\n";  //파일 입출력
+
     vector<UserInfo> userlist;
     vector<UserInfo> companylist;
    
 }
+
 void UserInfo::editUserInfo(UserInfo user,string usertype) {
     vector<UserInfo> userlist;
     vector<UserInfo> companylist;
+
     if (usertype == "1")
-        userlist.push_back(user);
+        userlist.push_back(user); //새로운 일반 회원 정보 추가
     else if (usertype == "2")
-        companylist.push_back(user);
-        cout << userlist.size();
+        companylist.push_back(user);    //새로운 회사 회원 정보 추가
+        //cout << userlist.size();
 }
 void UserInfo::deleteUserInfo(string showid)
 {
-    vector<UserInfo> userlist;
+    vector<UserInfo> userlist;  
     vector<UserInfo> companylist;
+
     for (int i = 0; i < userlist.size(); ++i)
     {
         if (userlist[i].ID == showid)
         {
+            //탈퇴하려는 ID 인덱스 찾기
             userlist.erase(userlist.begin() + i);
-            --i;  // 현재 인덱스를 감소시켜 다음 원소를 검사하도록 조정
+            --i;  
         }
     }
     for (int i = 0; i < companylist.size(); ++i)
@@ -47,7 +52,7 @@ void UserInfo::deleteUserInfo(string showid)
         if (companylist[i].ID == showid)
         {
             companylist.erase(userlist.begin() + i);
-            --i;  // 현재 인덱스를 감소시켜 다음 원소를 검사하도록 조정
+            --i;
         }
     }
 
@@ -56,5 +61,5 @@ void UserInfo::deleteUserInfo(string showid)
 void UserInfo::putState(int state)
 {
     int loginstate;
-    loginstate = state;
+    loginstate = state; //1-->로그인 0--> 로그아웃
 }

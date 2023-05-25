@@ -15,25 +15,29 @@ class UserInfo
 	
 	
 	public:
-		string usertype;
-		string name;//회사이름,회원이름
-		string num; //사업자번호,주민번호
+		string usertype;	//회원 종류 (일반 회원, 회사 회원)
+		string name;		//회사이름,회원이름
+		string num;			//사업자번호,주민번호
 
-		string ID;
-		string PW;
-		UserInfo() { cout << "\n"; };
-	    UserInfo(string& usertype, string& name, string& num, string& ID, string& PW);
-	    
-	    
-	    
-	    void getinfo();
-	    void editUserInfo(UserInfo user, string usertype);
-		void deleteUserInfo(string showid);
-		void putState(int state);
+		string ID;			//ID
+		string PW;			//passward
+			
+		static vector<UserInfo> userlist;	//일반 회원 리스트
+		static vector<UserInfo> companylist;	//회사 회원 리스트
+		static int loginstate;					//로그인 상태 
 
-		static vector<UserInfo> userlist;
-		static vector<UserInfo> companylist;
-		static int loginstate; 
+
+		UserInfo() { cout << "\n"; }; //생성자
+	    UserInfo(string& usertype, string& name, string& num, string& ID, string& PW);	//생성자
+	    
+	    
+	    
+	    void getinfo();		//회원 정보 조회
+	    void editUserInfo(UserInfo user, string usertype);	//회원 리스트에 새로운 회원 추가
+		void deleteUserInfo(string showid);					//회원 리스트에서 회원 삭제
+		void putState(int state);							//로그인 여부
+
+		
 
 
 };

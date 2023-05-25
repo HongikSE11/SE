@@ -6,10 +6,11 @@
 #include <stdio.h>
 #include <iostream>
 using namespace std;
+
 class SignUp
 {
 public:
-	void signupstart();
-	void ShowUserTypeInformation();
+	void signupstart();	//main 함수에서 실행시키는 함수
+	void ShowUserTypeInformation();	//회원 종류 출력 함수
 };
 
