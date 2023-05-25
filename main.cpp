@@ -49,8 +49,6 @@ int main()
 }
 
 
-
-
 void doTask()
 {
     // 메뉴 파싱을 위한 level 구분을 위한 변수
@@ -131,16 +129,15 @@ void doTask()
             }
             case 2: //"4.2. 채용 지원“ 메뉴 부분
             {
-                CheckApplyInformationUI UI;
-                UI.startInterface();
-                UI.selectInfo();
+                ApplyInfo applyInfo;
+                applyInfo.addApplyInfo();
                 break;
             }
             case 3: //"4.3. 지원 정보 조회“ 메뉴 부분
             {
                 CheckApplyInformationUI UI;
                 UI.startInterface();
-                UI.addApplyInfo();
+                UI.selectInfo();
                 break;
             }
             case 4: //"4.4. 지원 취소“ 메뉴 부분
@@ -179,29 +176,6 @@ void doTask()
         return;
         }
     }
-}
-
-
-void join()
-{
-    /*            !!!!!!!       중요        !!!!!!!!!
-     * 단순히 파일을 통해 입출력하는 방법을 보이기 위한 코드이므로 이 함수에서 그대로 사용하면 안됨.
-     * control 및 boundary class를 이용해서 해당 기능이 구현되도록 해야 함.
-     */
-
-    char user_type[MAX_STRING], name[MAX_STRING], SSN [MAX_STRING],
-        address[MAX_STRING], ID[MAX_STRING], password[MAX_STRING];
-
-    // 입력 형식 : 이름, 주민번호, ID, Password를 파일로부터 읽음
-    fscanf(in_fp, "%s %s %s %s", name, SSN, ID, password);
-
-
-    // 해당 기능 수행  
-
-
-    // 출력 형식
-    fprintf(out_fp, "1.1. 회원가입\n");
-    fprintf(out_fp, "%s %s %s %s\n", name, SSN, ID, password);
 }
 
 
