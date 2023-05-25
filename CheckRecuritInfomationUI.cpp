@@ -1,54 +1,25 @@
+//í—¤ë” ì„ ì–¸
 #include "CheckRecuritInfomationUI.h"
 #include "CheckRecuritInfomation.h"
 #include <iostream>
 #include <string.h>
 #include <stdio.h>
-//#include <tuple>
 
-// »ó¼ö ¼±¾ğ
+// ìƒìˆ˜ ì„ ì–¸
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
 
-//typedef std::tuple<std::string, int, std::string> job_information;
-
 void CheckRecuritInfomationUI::startInterface()
 {
-	//std::cout << "µî·ÏµÈ Ã¤¿ë Á¤º¸ Á¶È¸" << std::endl;
-	//std::cout << "> { [¾÷¹«] [ÀÎ¿ø ¼ö] [½ÅÃ» ¸¶°¨ÀÏ] } " << std::endl;
-
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-	fprintf(out_fp, "µî·ÏµÈ Ã¤¿ë Á¤º¸ Á¶È¸\n");
-
-
-	//fprintf(out_fp, "> { [¾÷¹«] [ÀÎ¿ø ¼ö] [½ÅÃ» ¸¶°¨ÀÏ] }\n");
-
+	fprintf(out_fp, "3.2. ë“±ë¡ëœ ì±„ìš© ì •ë³´ ì¡°íšŒ\n");	//íŒŒì¼ ì¶œë ¥
 }
 
 void CheckRecuritInfomationUI::selectInfo()
 {
-	
-
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-	fprintf(out_fp, "4.1 Ã¤¿ë Á¤º¸ °Ë»ö\n");
+	fprintf(out_fp, "4.1 ì±„ìš© ì •ë³´ ê²€ìƒ‰\n");	//íŒŒì¼ ì¶œë ¥
 
-	CheckRecuritInfomation::showRecuritInfo();
-	
-	/*
-	std::string job; //¾÷¹«
-	int n_member;	//ÀÎ¿ø ¼ö
-	std::string due_date;	//½ÅÃ» ¸¶°¨ÀÏ
-
-	job_information temp_info = std::make_tuple(job, n_member, due_date);
-
-	temp_info = CheckRecuritInfomation::showRecuritInfo();
-
-	job = std::get<0>(temp_info);
-	n_member = std::get<1>(temp_info);
-	due_date = std::get<2>(temp_info);
-
-	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-	fprintf(out_fp, "> { [%s] [%d] [%s] }\n", job, n_member, due_date);
-	*/
-
+	CheckRecuritInfomation::showRecuritInfo();	//ì±„ìš© ì •ë³´ ì¶œë ¥ í•¨ìˆ˜ í˜¸ì¶œ
 }
