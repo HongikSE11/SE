@@ -1,14 +1,15 @@
+//í—¤ë”ì„ ì–¸
 #pragma once
 #include <string>
 
 class Apply
 {
 private:
-	std::string name;		//È¸»çÀÌ¸§
-	int commpany_num;		//»ç¾÷ÀÚ¹øÈ£
-	std::string job;		//¾÷¹«
-	int n_member;			//ÀÎ¿ø¼ö
-	std::string due_date;	//¸¶°¨ÀÏ
+	std::string name;		//íšŒì‚¬ì´ë¦„
+	int commpany_num;		//ì‚¬ì—…ìë²ˆí˜¸
+	std::string job;		//ì—…ë¬´
+	int n_member;			//ì¸ì›ìˆ˜
+	std::string due_date;	//ë§ˆê°ì¼
 
 public:
 	Apply(std::string input_name, int input_company_num, std::string input_job, int input_n_member,std::string input_due_date)
