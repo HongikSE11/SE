@@ -124,19 +124,23 @@ void doTask()
             {
             case 1: //"4.1. 채용 정보 검색“ 메뉴 부분
             {
-                //do something
+                CheckRecuritInfomationUI UI;
+                UI.startInterface();
+                UI.selectInfo();
                 break;
             }
             case 2: //"4.2. 채용 지원“ 메뉴 부분
             {
-                //do something
+                CheckApplyInformationUI UI;
+                UI.startInterface();
+                UI.selectInfo();
                 break;
             }
             case 3: //"4.3. 지원 정보 조회“ 메뉴 부분
             {
                 CheckApplyInformationUI UI;
                 UI.startInterface();
-                UI.selectInfo();
+                UI.addApplyInfo();
                 break;
             }
             case 4: //"4.4. 지원 취소“ 메뉴 부분
