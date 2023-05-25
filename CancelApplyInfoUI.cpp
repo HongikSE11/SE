@@ -13,7 +13,7 @@
 void CancelApplyInfoUI::startInterface()
 {
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-	fprintf(out_fp, "4.4 지원 취소");
+	fprintf(out_fp, "4.4 지원 취소");	//파일 출력
 }
 
 
