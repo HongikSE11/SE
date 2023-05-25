@@ -1,23 +1,21 @@
+//í—¤ë” ì„ ì–¸
 #pragma once
 #include "Recurit.h"
 #include <string.h>
-//#include <tuple>
-//typedef std::tuple<std::string, int, std::string> job_information;
 
 class RecuritInfo
 {
 private:
-	static Recurit* RecuritList[50];		//Ã¤¿ë Á¤º¸ ÀúÀå ¹è¿­ --> vector ·Î ¹Ù²Ù±â
-	//static std::vector<Recurit> RecuritList[50]; 
-	static int num_Recurit;					//Ã¤¿ë Á¤º¸ ¼ö
+	static Recurit* RecuritList[50];	//ì±„ìš© ì •ë³´ ì €ì¥ ë¦¬ìŠ¤íŠ¸
+	static int num_Recurit;			//ì±„ìš© ì •ë³´ ìˆ˜
 
 public:
 	RecuritInfo()
 	{
-		num_Recurit = 0;	//»ı¼ºÀÚ¿¡¼­ Ã¤¿ë Á¤º¸ ¼ö ¸¦ 0 À¸·Î ÃÊ±âÈ­
+		num_Recurit = 0;	//ìƒì„±ìì—ì„œ ì±„ìš© ì •ë³´ ìˆ˜ ë¥¼ 0 ìœ¼ë¡œ ì´ˆê¸°í™”
 	}
 
-	static void getInfo();	//Ã¤¿ë Á¤º¸ Ãâ·Â ÇÔ¼ö
-	static void addInfo(std::string input_job, int input_n_member, std::string input_due_date); //Ã¤¿ë Á¤º¸ ÀÔ·Â ÇÔ¼ö
+	static void getInfo();	//ì±„ìš© ì •ë³´ ì¶œë ¥ í•¨ìˆ˜
+	static void addInfo(std::string input_job, int input_n_member, std::string input_due_date); //ì±„ìš© ì •ë³´ ì…ë ¥ í•¨ìˆ˜
 };
 
