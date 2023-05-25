@@ -1,8 +1,9 @@
+//í—¤ë” ì„ ì–¸
 #pragma once
 class CheckRecuritInfomationUI
 {
 public:
-	void startInterface();	//interface ½ÃÀÛ ÇÔ¼ö
-	void selectInfo();		//Ãë¾÷ Á¤º¸ ¼±ÅÃ ÇÔ¼ö
+	void startInterface();		//interface ì‹œì‘ í•¨ìˆ˜
+	void selectInfo();		//ì·¨ì—… ì •ë³´ ì„ íƒ í•¨ìˆ˜
 };
 
