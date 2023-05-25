@@ -2,7 +2,7 @@
 class CheckRecuritInfomationUI
 {
 public:
-	void startInterface();
-	void selectInfo();
+	void startInterface();	//interface 시작 함수
+	void selectInfo();		//취업 정보 선택 함수
 };
 

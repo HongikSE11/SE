@@ -1,5 +1,6 @@
 #include "Recurit.h"
 #include <iostream>
+#include "UserInfo.h"
 //#include <tuple>
 //typedef std::tuple<std::string, int, std::string> job_information;
 
@@ -22,6 +23,7 @@ void Recurit::getRecuritInfo()
 	*/
 
 
+
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-	fprintf(out_fp, "> { [%s] [%d] [%s] }\n", job.c_str(), n_member, due_date.c_str());
+	fprintf(out_fp, "> { [%s] [%d] [%s] }\n", job.c_str(), n_member, due_date.c_str()); //채용 정보 파일 출력
 }

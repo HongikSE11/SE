@@ -27,10 +27,12 @@ void CheckRecuritInfomationUI::startInterface()
 
 void CheckRecuritInfomationUI::selectInfo()
 {
-	CheckRecuritInfomation::showRecuritInfo();
+	
 
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-	fprintf(out_fp, "채용 정보 검색\n");
+	fprintf(out_fp, "4.1 채용 정보 검색\n");
+
+	CheckRecuritInfomation::showRecuritInfo();
 	
 	/*
 	std::string job; //업무

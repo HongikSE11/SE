@@ -17,8 +17,8 @@ void CheckApplyInformationUI::startInterface()
 
 void CheckApplyInformationUI::selectInfo()
 {
-	CheckApplyInformation::showApplyInfo();
-
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-	fprintf(out_fp, "지원 정보 검색\n");
+	fprintf(out_fp, "4.3. 지원 정보 조회\n");
+
+	CheckApplyInformation::showApplyInfo();
 }

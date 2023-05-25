@@ -11,20 +11,18 @@
 
 void AddRecuritInformationUI::inputInfo()
 {
-	//AddRecuritInformation::addNewInfo();
-
 	FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
-	char str[2][100];	//job, due_date 입력 용
-	std::string job; //업무
-	int n_member = 0;	//인원 수
-	std::string due_date; //마김 기한
+	char str[2][100];		//job, due_date 입력 용
+	std::string job;		//업무
+	int n_member = 0;		//인원 수
+	std::string due_date;	//마김 기한
 
 
-	fscanf(in_fp, "%s %d %s", str[0], &n_member, str[1]);
+	fscanf(in_fp, "%s %d %s", str[0], &n_member, str[1]); //파일에서 업무, 인원 수, 마감 기한 불러오기
 
 	job = str[0];
 	due_date = str[1];
-	AddRecuritInformation::addNewInfo(job, n_member, due_date);
+	AddRecuritInformation::addNewInfo(job, n_member, due_date);	//새로운 채용 정보 등록 함수
 
 }
 
@@ -32,6 +30,8 @@ void AddRecuritInformationUI::startInterface()
 {
 	//std::cout << "> [업무] [인원 수] [신청 마감일]" << std::endl;
 
+	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
+	fprintf(out_fp, "채용 정보가 등록\n");
 }
 
 void AddRecuritInformationUI::showCompleteMessage()
