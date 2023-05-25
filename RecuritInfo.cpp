@@ -1,16 +1,13 @@
+//í—¤ë” ì„ ì–¸
 #include "RecuritInfo.h"
 #include "Recurit.h"
 #include <iostream>
 #include <string>
 #include <vector>
-#include <>
-//#include <tuple>
-
-//typedef std::tuple<std::string, int, std::string> job_information;
 
 void RecuritInfo::getInfo()
 {	
-	//Ã¤¿ë Á¤º¸ °¡ ÀúÀåµÈ ¸®½ºÆ®¸¦ ¼øÈ¸ÇÏ¸é¼­ Ã¤¿ë Á¤º¸ Ãâ·Â
+	//ì±„ìš© ì •ë³´ ê°€ ì €ì¥ëœ ë¦¬ìŠ¤íŠ¸ë¥¼ ìˆœíšŒí•˜ë©´ì„œ ì±„ìš© ì •ë³´ ì¶œë ¥
 	for (int i = 0; i < num_Recurit; i++)
 	{
 		RecuritList[i]->getRecuritInfo();
@@ -19,21 +16,15 @@ void RecuritInfo::getInfo()
 
 void RecuritInfo::addInfo(std::string input_job, int input_n_member, std::string input_due_date)
 {
-	std::string job;			//¾÷¹«
-	int n_member;				//ÀÎ¿ø ¼ö
-	std::string due_date;		//½ÅÃ» ¸¶°¨ÀÏ
-	std::string company_name;	//È¸»ç ÀÌ¸§
-	int num;					//»ç¾÷ÀÚ ¹øÈ£
-
-	//std::cin >> job >> n_member >> due_date;
-
+	std::string job;		//ì—…ë¬´
+	int n_member;			//ì¸ì› ìˆ˜
+	std::string due_date;		//ì‹ ì²­ ë§ˆê°ì¼
+	
 	job = input_job;
 	n_member = input_n_member;
 	due_date = input_due_date;
 
-	company_name = 
+	Recurit *newRecurit = new Recurit(job, n_member, due_date); //ìƒˆë¡œìš´ ì±„ìš© ì •ë³´ ê°ì²´ ìƒì„±
 
-	Recurit *newRecurit = new Recurit(job, n_member, due_date); //»õ·Î¿î Ã¤¿ë Á¤º¸ °´Ã¼ »ı¼º
-
-	RecuritList[num_Recurit++] = newRecurit; //Ã¤¿ë Á¤º¸ µî·ÏµÈ ¸®½ºÆ®¿¡ »õ·Î¿î Ã¤¿ë Á¤º¸ °´Ã¼ Ãß°¡
+	RecuritList[num_Recurit++] = newRecurit; //ì±„ìš© ì •ë³´ ë“±ë¡ëœ ë¦¬ìŠ¤íŠ¸ì— ìƒˆë¡œìš´ ì±„ìš© ì •ë³´ ê°ì²´ ì¶”ê°€
 }
