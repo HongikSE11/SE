@@ -72,31 +72,15 @@ void doTask()
             {
             case 1:   //"1.1. 회원 가입“ 메뉴 부분
             {
-                fscanf(in_fp, "%d", &menu_level_3);
-
-                switch (menu_level_3)
-                {
-                case 1: //"1.1.1 회사 회원 가입“ 메뉴 부분
-                {
-                    
-                    break;
-                }
-                case 2: //"1.1.2 일반 회원 가입“ 메뉴 부분
-                {
-                    //do something
-                    break;
-                }
-                }
-                {
-                default:
-                    break;
-                }
-
+                SignUp signup;
+                signup.signupstart();
                 break;
             }
             case 2: //"1.2 회원 탈퇴“ 메뉴 부분
             {
-                //do something
+                SignOut signout;
+                signout.ShowUserInfo();
+             
                 break;
             }
 
@@ -106,12 +90,14 @@ void doTask()
             {
             case 1: //"2.1 로그인“ 메뉴 부분
             {
-                //do something
+                login loginstart;
+                loginstart.loginstart();
                 break;
             }
             case 2: //"2.2 로그아웃“ 메뉴 부분
             {
-                //do something
+                logout logoutstart;
+                logoutstart logoutstart();
                 break;
             }
             }
