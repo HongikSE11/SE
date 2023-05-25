@@ -1,3 +1,4 @@
+//í—¤ë” ì„ ì–¸
 #pragma once
 #include "Apply.h"
 #include <string.h>
@@ -5,8 +6,8 @@
 class ApplyInfo
 {
 private:
-	static Apply* ApplyList[50];		//Áö¿ø Á¤º¸ ÀúÀå ¹è¿­
-	static int num_Apply;				//Áö¿ø Á¤º¸ ¹è¿­ ¼ö
+	static Apply* ApplyList[50];		//ì§€ì› ì •ë³´ ì €ì¥ ë°°ì—´
+	static int num_Apply;			//ì§€ì› ì •ë³´ ìˆ˜
 
 public:
 	ApplyInfo()
@@ -14,7 +15,7 @@ public:
 		num_Apply = 0;
 	}
 
-	static void getApplyInfo();	//Áö¿ø Á¤º¸ Ãâ·Â ÇÔ¼ö
-	static void addApplyInfo(std::string input_name, int input_company_num, std::string input_job,std::string due_date);	//Áï½Ã Áö¿ø ÇÔ¼ö
-	static void cancelApply(int input_company_num);	//Áö¿ø Ãë¼Ò ÇÔ¼ö
+	static void getApplyInfo();	//ì§€ì› ì •ë³´ ì¶œë ¥ í•¨ìˆ˜
+	static void addApplyInfo(std::string input_name, int input_company_num, std::string input_job,std::string due_date);	//ì¦‰ì‹œ ì§€ì› í•¨ìˆ˜
+	static void cancelApply(int input_company_num);	//ì§€ì› ì·¨ì†Œ í•¨ìˆ˜
 };
