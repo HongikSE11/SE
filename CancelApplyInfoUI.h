@@ -1,7 +1,7 @@
+//í—¤ë” ì„ ì–¸
 #pragma once
 class CancelApplyInfoUI
 {
 public :
-	void startInterface();	//interface ½ÃÀÛ ÇÔ¼ö
-	//void selectInfo();
+	void startInterface();	//interface ì‹œì‘í•¨ìˆ˜ í˜¸ì¶œ
 };
