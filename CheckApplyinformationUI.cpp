@@ -1,3 +1,4 @@
+//í—¤ë” ì„ ì–¸
 #include <iostream>
 #include <string.h>
 #include <stdio.h>
@@ -11,14 +12,11 @@
 void CheckApplyInformationUI::startInterface() 
 {
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-	fprintf(out_fp, "Áö¿ø Á¤º¸ Á¶È¸\n");
+	fprintf(out_fp, "4.3ì§€ì› ì •ë³´ ì¡°íšŒ\n");	//íŒŒì¼ ì¶œë ¥
 }
 
 
 void CheckApplyInformationUI::selectInfo()
 {
-	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-	fprintf(out_fp, "4.3. Áö¿ø Á¤º¸ Á¶È¸\n");
-
-	CheckApplyInformation::showApplyInfo();
+	CheckApplyInformation::showApplyInfo(); //ì§€ì› ì •ë³´ ì¶œë ¥ í•¨ìˆ˜ í˜¸ì¶œ
 }
