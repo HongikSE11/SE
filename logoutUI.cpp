@@ -1,5 +1,10 @@
+//헤더선언
 #include "logoutUI.h"
 
+// 상수 선언
+#define MAX_STRING 32
+#define INPUT_FILE_NAME "input.txt"
+#define OUTPUT_FILE_NAME "output.txt"
 using namespace std;
 void logoutUI::startinterface() {
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
