@@ -1,22 +1,30 @@
 #include "loginUI.h"
 
-
+//ÏÉÅÏàò ÏÑ†Ïñ∏ 
+#define MAX_STRING 32
+#define INPUT_FILE_NAME "input.txt"
+#define OUTPUT_FILE_NAME "output.txt"
 using namespace std;
 void loginUI::startinterface() {
-	cout << "∑Œ±◊¿Œ Ω√¿€\n";
+	cout << "Î°úÍ∑∏Ïù∏ ÏãúÏûë\n";
 
-
+	
+	
+	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
+	fprintf(out_fp, "2.1. Î°úÍ∑∏Ïù∏\n");
+}
 }
 
 void loginUI::ShowCompleteMessage() {
-	cout << " ∑Œ±◊¿Œ øœ∑·\n";
+	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
+	fprintf(out_fp, "\n");
 
 }
 
 void loginUI::inputinfo() {
-	cout << "ID PW∏¶ ¿‘∑¬«œΩ√ø¿.\n";
+	cout << "ID PWÎ•º ÏûÖÎ†•ÌïòÏãúÏò§.\n";
 	cin >> ID;
 	cin >> PW;
-
-
+	FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
+	fscanf(in_fp, "%s %s", ID, PW); 
 }
