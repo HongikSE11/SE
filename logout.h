@@ -1,5 +1,5 @@
+//헤더선언
 #pragma once
-
 #include "UserInfo.h"
 #include "logoutUI.h"
 class logout
