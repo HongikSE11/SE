@@ -3,8 +3,6 @@
 #include <string>
 #include <stdio.h>
 #include <iostream>
-
-
 #include <fstream>
 using namespace std;
 
@@ -13,26 +11,21 @@ using namespace std;
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
 
-void SignOutUI::startinterface() {
+void SignOutUI::startinterface() 
+{
 	cout << "회원탈퇴 시작\n";
-
-
 }
 
-void SignOutUI::selectCase() {
+void SignOutUI::selectCase() 
+{
 	cout << "회원아이디를 입력하시오 \n";
 	FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
 	fscanf(in_fp, "%s,  ID); 
-
-
 }
 
 
 
-void SignOutUI::ShowCompleteMessage() {
+void SignOutUI::ShowCompleteMessage()
+{
 	cout << "회원 탈퇴가 완료 되었습니다. \n";
-
-
-
-
 }
