@@ -1,7 +1,8 @@
+//í—¤ë” ì„ ì–¸
 #pragma once
 class CheckApplyInformationUI
 {
 public:
-	void startInterface();	//interface ½ÃÀÛ ÇÔ¼ö
-	void selectInfo();		//Áö¿øÇÏ´Â È¸»ç Á¤º¸ Ãâ·Â ÇÔ¼ö
+	void startInterface();		//interface ì‹œì‘ í•¨ìˆ˜
+	void selectInfo();		//ì§€ì›í•˜ëŠ” íšŒì‚¬ ì •ë³´ ì¶œë ¥ í•¨ìˆ˜
 };
