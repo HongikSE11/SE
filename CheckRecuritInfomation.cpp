@@ -1,11 +1,8 @@
+//í—¤ë” ì„ ì–¸
 #include "CheckRecuritInfomation.h"
 #include "RecuritInfo.cpp"
-//#include <tuple>
-
-//typedef std::tuple<std::string, int, std::string> job_information;
-
 
 void CheckRecuritInfomation::showRecuritInfo()
 {
-	RecuritInfo::getInfo(); //Ã¤¿ë Á¤º¸ Ãâ·Â ÇÔ¼ö È£Ãâ
+	RecuritInfo::getInfo(); /ì±„ìš© ì •ë³´ ì¶œë ¥ í•¨ìˆ˜ í˜¸ì¶œ
 }
