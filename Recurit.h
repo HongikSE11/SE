@@ -1,3 +1,4 @@
+//í—¤ë” ì„ ì–¸
 #pragma once
 #include <string>
 #include "UserInfo.h"
@@ -5,17 +6,16 @@
 class Recurit
 {
 private:
-	std::string job;		//¾÷¹«
-	int n_member;			//ÀÎ¿ø ¼ö
-	std::string due_date;	//½ÅÃ» ¸¶°¨ÀÏ
-	std::string company_name; //È¸»ç ÀÌ¸§
-	int num; //»ç¾÷ÀÚ ¹øÈ£
-
-	//std::string registrant = "default"; //Á¤º¸ µî·ÏÀÚ
+	std::string job;		//ì—…ë¬´
+	int n_member;			//ì¸ì› ìˆ˜
+	std::string due_date;		//ì‹ ì²­ ë§ˆê°ì¼
+	std::string company_name; 	//íšŒì‚¬ ì´ë¦„
+	int num; 			//ì‚¬ì—…ì ë²ˆí˜¸
 
 public:
 	Recurit(std::string input_job, int input_n_member, std::string input_due_date, std::string input_company_name, int input_num)
 	{
+		
 		job = input_job;
 		n_member = input_n_member;
 		due_date = input_due_date;
@@ -23,6 +23,6 @@ public:
 		num = input_num;
 	}
 
-	void getRecuritInfo(); //Ã¤¿ë Á¤º¸µé Ãâ·Â ÇÔ¼ö
+	void getRecuritInfo(); //ì±„ìš© ì •ë³´ë“¤ ì¶œë ¥ í•¨ìˆ˜
 };
 
