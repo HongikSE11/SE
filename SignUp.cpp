@@ -1,5 +1,5 @@
+//헤더선언
 #include "SignUp.h"
-
 #include <string>
 #include <stdio.h>
 #include <iostream>
