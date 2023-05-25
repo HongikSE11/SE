@@ -1,3 +1,4 @@
+//í—¤ë” ì„ ì–¸
 #include "UserInfo.h"
 #include <string>
 #include <stdio.h>
@@ -6,17 +7,17 @@
 
 
 UserInfo::UserInfo(string& type, string& name, string& num, string& id, string& pw) {
-    this->name = name;  //È¸¿ø ÀÌ¸§
-    this->num = num;    //ÁÖ¹Î¹øÈ£ or »ç¾÷ÀÚ ¹øÈ£
-    this->ID = id;      //È¸¿ø ID
-    this->PW = pw;      //È¸¿ø passward
-    this->usertype = type;  //È¸¿ø Á¾·ù
+    this->name = name;  //íšŒì› ì´ë¦„
+    this->num = num;    //ì£¼ë¯¼ë²ˆí˜¸ or ì‚¬ì—…ì ë²ˆí˜¸
+    this->ID = id;      //íšŒì› ID
+    this->PW = pw;      //íšŒì› passward
+    this->usertype = type;  //íšŒì› ì¢…ë¥˜
 
 
 };
 
 void UserInfo::getinfo() {
-    cout << "È¸¿øÁ¤º¸ ¹Ş¾Æ¿À±â\n";  //ÆÄÀÏ ÀÔÃâ·Â
+    cout << "íšŒì›ì •ë³´ ë°›ì•„ì˜¤ê¸°\n";  //íŒŒì¼ ì…ì¶œë ¥
 
     vector<UserInfo> userlist;
     vector<UserInfo> companylist;
@@ -28,9 +29,9 @@ void UserInfo::editUserInfo(UserInfo user,string usertype) {
     vector<UserInfo> companylist;
 
     if (usertype == "1")
-        userlist.push_back(user); //»õ·Î¿î ÀÏ¹İ È¸¿ø Á¤º¸ Ãß°¡
+        userlist.push_back(user); //ìƒˆë¡œìš´ ì¼ë°˜ íšŒì› ì •ë³´ ì¶”ê°€
     else if (usertype == "2")
-        companylist.push_back(user);    //»õ·Î¿î È¸»ç È¸¿ø Á¤º¸ Ãß°¡
+        companylist.push_back(user);    //ìƒˆë¡œìš´ íšŒì‚¬ íšŒì› ì •ë³´ ì¶”ê°€
         //cout << userlist.size();
 }
 void UserInfo::deleteUserInfo(string showid)
@@ -42,7 +43,7 @@ void UserInfo::deleteUserInfo(string showid)
     {
         if (userlist[i].ID == showid)
         {
-            //Å»ÅğÇÏ·Á´Â ID ÀÎµ¦½º Ã£±â
+            //íƒˆí‡´í•˜ë ¤ëŠ” ID ì¸ë±ìŠ¤ ì°¾ê¸°
             userlist.erase(userlist.begin() + i);
             --i;  
         }
@@ -61,5 +62,5 @@ void UserInfo::deleteUserInfo(string showid)
 void UserInfo::putState(int state)
 {
     int loginstate;
-    loginstate = state; //1-->·Î±×ÀÎ 0--> ·Î±×¾Æ¿ô
+    loginstate = state; //1-->ë¡œê·¸ì¸ 0--> ë¡œê·¸ì•„ì›ƒ
 }
