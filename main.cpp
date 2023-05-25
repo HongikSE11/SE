@@ -134,12 +134,15 @@ void doTask()
             }
             case 3: //"4.3. 지원 정보 조회“ 메뉴 부분
             {
-                //do something
+                CheckApplyInformationUI UI;
+                UI.startInterface();
+                UI.selectInfo();
                 break;
             }
             case 4: //"4.4. 지원 취소“ 메뉴 부분
             {
-                //do something
+                CancelApplyInfoUI UI;
+                UI.startInterface();
                 break;
             }
             }
