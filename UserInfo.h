@@ -1,3 +1,4 @@
+//í—¤ë”ì„ ì–¸
 #pragma once
 #include <string>
 #include <stdio.h>
@@ -15,27 +16,27 @@ class UserInfo
 	
 	
 	public:
-		string usertype;	//È¸¿ø Á¾·ù (ÀÏ¹İ È¸¿ø, È¸»ç È¸¿ø)
-		string name;		//È¸»çÀÌ¸§,È¸¿øÀÌ¸§
-		string num;			//»ç¾÷ÀÚ¹øÈ£,ÁÖ¹Î¹øÈ£
+		string usertype;	//íšŒì› ì¢…ë¥˜ (ì¼ë°˜ íšŒì›, íšŒì‚¬ íšŒì›)
+		string name;		//íšŒì‚¬ì´ë¦„,íšŒì›ì´ë¦„
+		string num;			//ì‚¬ì—…ìë²ˆí˜¸,ì£¼ë¯¼ë²ˆí˜¸
 
 		string ID;			//ID
 		string PW;			//passward
 			
-		static vector<UserInfo> userlist;		//ÀÏ¹İ È¸¿ø ¸®½ºÆ®
-		static vector<UserInfo> companylist;	//È¸»ç È¸¿ø ¸®½ºÆ®
-		static int loginstate;					//·Î±×ÀÎ »óÅÂ 
+		static vector<UserInfo> userlist;		//ì¼ë°˜ íšŒì› ë¦¬ìŠ¤íŠ¸
+		static vector<UserInfo> companylist;	//íšŒì‚¬ íšŒì› ë¦¬ìŠ¤íŠ¸
+		static int loginstate;					//ë¡œê·¸ì¸ ìƒíƒœ 
 
 
-		UserInfo() { cout << "\n"; }; //»ı¼ºÀÚ
-	    UserInfo(string& usertype, string& name, string& num, string& ID, string& PW);	//»ı¼ºÀÚ
+		UserInfo() { cout << "\n"; }; //ìƒì„±ì
+	    UserInfo(string& usertype, string& name, string& num, string& ID, string& PW);	//ìƒì„±ì
 	    
 	    
 	    
-	    void getinfo();										//È¸¿ø Á¤º¸ Á¶È¸
-	    void editUserInfo(UserInfo user, string usertype);	//È¸¿ø ¸®½ºÆ®¿¡ »õ·Î¿î È¸¿ø Ãß°¡
-		void deleteUserInfo(string showid);					//È¸¿ø ¸®½ºÆ®¿¡¼­ È¸¿ø »èÁ¦
-		void putState(int state);							//·Î±×ÀÎ ¿©ºÎ
+	    void getinfo();										//íšŒì› ì •ë³´ ì¡°íšŒ
+	    void editUserInfo(UserInfo user, string usertype);	//íšŒì› ë¦¬ìŠ¤íŠ¸ì— ìƒˆë¡œìš´ íšŒì› ì¶”ê°€
+		void deleteUserInfo(string showid);					//íšŒì› ë¦¬ìŠ¤íŠ¸ì—ì„œ íšŒì› ì‚­ì œ
+		void putState(int state);							//ë¡œê·¸ì¸ ì—¬ë¶€
 
 		
 
