@@ -1,10 +1,11 @@
+//í—¤ë” ì„ ì–¸
 #include "AddRecuritInformationUI.h"
 #include "AddRecuritInformation.h"
 #include <iostream>
 #include <string.h>
 #include <stdio.h>
 
-// »ó¼ö ¼±¾ğ
+// ìƒìˆ˜ ì„ ì–¸
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
@@ -12,32 +13,28 @@
 void AddRecuritInformationUI::inputInfo()
 {
 	FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
-	char str[2][100];		//job, due_date ÀÔ·Â ¿ë
-	std::string job;		//¾÷¹«
-	int n_member = 0;		//ÀÎ¿ø ¼ö
-	std::string due_date;	//¸¶±è ±âÇÑ
+	char str[2][100];		//job, due_date ì…ë ¥ ìš© ë¬¸ìì—´
+	std::string job;		//ì—…ë¬´ ì´ë¦„
+	int n_member = 0;		//ì¸ì› ìˆ˜
+	std::string due_date;		//ë§ˆê¹€ ê¸°í•œ
 
 
-	fscanf(in_fp, "%s %d %s", str[0], &n_member, str[1]); //ÆÄÀÏ¿¡¼­ ¾÷¹«, ÀÎ¿ø ¼ö, ¸¶°¨ ±âÇÑ ºÒ·¯¿À±â
+	fscanf(in_fp, "%s %d %s", str[0], &n_member, str[1]); 		//íŒŒì¼ì—ì„œ ì—…ë¬´, ì¸ì› ìˆ˜, ë§ˆê° ê¸°í•œ ë¶ˆëŸ¬ì˜¤ê¸°
 
 	job = str[0];
 	due_date = str[1];
-	AddRecuritInformation::addNewInfo(job, n_member, due_date);	//»õ·Î¿î Ã¤¿ë Á¤º¸ µî·Ï ÇÔ¼ö
+	AddRecuritInformation::addNewInfo(job, n_member, due_date);	//ìƒˆë¡œìš´ ì±„ìš© ì •ë³´ ë“±ë¡ í•¨ìˆ˜
 
 }
 
 void AddRecuritInformationUI::startInterface()
 {
-	//std::cout << "> [¾÷¹«] [ÀÎ¿ø ¼ö] [½ÅÃ» ¸¶°¨ÀÏ]" << std::endl;
-
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-	fprintf(out_fp, "Ã¤¿ë Á¤º¸°¡ µî·Ï\n");
+	fprintf(out_fp, "ì±„ìš© ì •ë³´ê°€ ë“±ë¡\n"); //íŒŒì¼ ì¶œë ¥
 }
 
 void AddRecuritInformationUI::showCompleteMessage()
 {
-	//std::cout << "Ã¤¿ë Á¤º¸°¡ µî·ÏµÇ¾ú½À´Ï´Ù." << std::endl;
-
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-	fprintf(out_fp, "Ã¤¿ë Á¤º¸°¡ µî·ÏµÇ¾ú½À´Ï´Ù.");
+	fprintf(out_fp, "ì±„ìš© ì •ë³´ê°€ ë“±ë¡ë˜ì—ˆìŠµë‹ˆë‹¤."); //íŒŒì¼ ì¶œë ¥
 }
