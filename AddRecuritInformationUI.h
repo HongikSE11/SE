@@ -1,3 +1,4 @@
+//헤더 선언
 #pragma once
 class AddRecuritInformationUI
 {
