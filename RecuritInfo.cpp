@@ -28,3 +28,10 @@ void RecuritInfo::addInfo(std::string input_job, int input_n_member, std::string
 
 	RecuritList[num_Recurit++] = newRecurit; //채용 정보 등록된 리스트에 새로운 채용 정보 객체 추가
 }
+
+void RecuritInfo::getRecuritInfoDetails()
+{
+	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
+	fprintf(out_fp, "5.1. 지원 정보 통계");	//파일 출력
+}
+
