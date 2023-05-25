@@ -1,9 +1,9 @@
+//헤더 선언
 #pragma once
 #include "logIn.h"
 
 class selectMember
 {
   public:
-    memberInfo(); // 로그인에서 회사회원인지 일반회원인지 가져옴
-
+    memberInfo(); // 회원 종류 판별 함수
 };
