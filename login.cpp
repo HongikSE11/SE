@@ -1,3 +1,4 @@
+//Ìó§ÎçîÏÑ†Ïñ∏
 #include "login.h"
 #include "loginUI.h"
 void login::cheakloginInfo(string ID ,string PW) {
@@ -14,7 +15,7 @@ void login::cheakloginInfo(string ID ,string PW) {
         }
         else
         {
-            cout << "∑Œ±◊¿Œ Ω«∆–\n";
+            
             
             userinfo.putState(0);
         }
@@ -30,7 +31,7 @@ void login::cheakloginInfo(string ID ,string PW) {
         }
         else
         {
-            cout << "∑Œ±◊¿Œ Ω«∆–\n";
+            
 
             userinfo.putState(0);
         }
