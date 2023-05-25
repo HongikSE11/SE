@@ -1,3 +1,4 @@
+//헤더선언
 #include "SignUpUI.h"
 #include <string>
 #include <stdio.h>
