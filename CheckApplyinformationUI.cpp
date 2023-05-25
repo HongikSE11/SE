@@ -5,6 +5,7 @@
 #include "CheckApplyInfomationUI.h"
 #include "CheckApplyInfomation.h"
 
+//상수 선언 
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
