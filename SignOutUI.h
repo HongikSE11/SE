@@ -1,3 +1,4 @@
+//ìƒìˆ˜ì„ ì–¸
 #pragma once
 #include <iostream>
 #include <string>
@@ -6,11 +7,11 @@ using namespace std;
 class SignOutUI
 {
 public:
-	void selectCase();	//ID ÀÔ·Â
-	void startinterface();	//interface ½ÃÀÛ ÇÔ¼ö
-	void ShowCompleteMessage(); //¿Ï·á ¸Ş¼¼Áö Ãâ·Â ÇÔ¼ö
+	void selectCase();	//ID ì…ë ¥
+	void startinterface();	//interface ì‹œì‘ í•¨ìˆ˜
+	void ShowCompleteMessage(); //ì™„ë£Œ ë©”ì„¸ì§€ ì¶œë ¥ í•¨ìˆ˜
 
 
-	string ID; //ÀÔ·ÂÇÏ´Â È¸¿ø ID
+	string ID; //ì…ë ¥í•˜ëŠ” íšŒì› ID
 
 };
