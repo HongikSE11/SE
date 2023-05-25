@@ -1,26 +1,47 @@
-// Çì´õ ¼±¾ğ
+// í—¤ë” ì„ ì–¸
 #include <stdio.h>
 #include <string.h>
+#include "AddRecuritInformation.h"
+#include "AddRecuritInformationUI.h"
+#include "Apply.h"
+#include "ApplyInfo.h"
+#include "CancelApplyInfo.h"
+#include "CancelApplyInfoUI.h"
+#include "CheckApplyInfomation.h"
+#incldue "CheckApplyInfomationUI.h"
+#include "CheckRecuritInfomation.h"
+#include "CheckRecuritInfomationUI.h"
+#include "Recurit.h"
+#include "RecuritInfo.h"
+#include "Signout.h"
+#include "SignUP.h"
+#include "SignUpUI.h"
+#include "UserInfo.h"
+#include "login.h"
+#include "loginUI.h"
+#include "logout.h"
+#include "logoutUI.h"
+#include "selectMember.h"
+#include "selectMemberUI.h"
 
-// »ó¼ö ¼±¾ğ
+// ìƒìˆ˜ ì„ ì–¸
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
 
-// ÇÔ¼ö ¼±¾ğ
+// í•¨ìˆ˜ ì„ ì–¸
 void doTask();
 void join();
 void program_exit();
 
-// º¯¼ö ¼±¾ğ
+// ë³€ìˆ˜ ì„ ì–¸
 FILE* in_fp, * out_fp;
 
 int main()
 {
-    // ÆÄÀÏ ÀÔÃâ·ÂÀ» À§ÇÑ ÃÊ±âÈ­
+    // íŒŒì¼ ì…ì¶œë ¥ì„ ìœ„í•œ ì´ˆê¸°í™”
     FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
     FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
-
 
     doTask();
 
@@ -32,35 +53,35 @@ int main()
 
 void doTask()
 {
-    // ¸Ş´º ÆÄ½ÌÀ» À§ÇÑ level ±¸ºĞÀ» À§ÇÑ º¯¼ö
+    // ë©”ë‰´ íŒŒì‹±ì„ ìœ„í•œ level êµ¬ë¶„ì„ ìœ„í•œ ë³€ìˆ˜
     int menu_level_1 = 0, menu_level_2 = 0, menu_level_3 = 0;
     int is_program_exit = 0;
 
     while (!is_program_exit)
     {
-        // ÀÔ·ÂÆÄÀÏ¿¡¼­ ¸Ş´º ¼ıÀÚ 2°³¸¦ ÀĞ±â
+        // ì…ë ¥íŒŒì¼ì—ì„œ ë©”ë‰´ ìˆ«ì 2ê°œë¥¼ ì½ê¸°
         fscanf(in_fp, "%d %d ", &menu_level_1, &menu_level_2);
 
 
-        // ¸Ş´º ±¸ºĞ ¹× ÇØ´ç ¿¬»ê ¼öÇà
+        // ë©”ë‰´ êµ¬ë¶„ ë° í•´ë‹¹ ì—°ì‚° ìˆ˜í–‰
         switch (menu_level_1)
         {
         case 1:
         {
             switch (menu_level_2)
             {
-            case 1:   //"1.1. È¸¿ø °¡ÀÔ¡° ¸Ş´º ºÎºĞ
+            case 1:   //"1.1. íšŒì› ê°€ì…â€œ ë©”ë‰´ ë¶€ë¶„
             {
                 fscanf(in_fp, "%d", &menu_level_3);
 
                 switch (menu_level_3)
                 {
-                case 1: //"1.1.1 È¸»ç È¸¿ø °¡ÀÔ¡° ¸Ş´º ºÎºĞ
+                case 1: //"1.1.1 íšŒì‚¬ íšŒì› ê°€ì…â€œ ë©”ë‰´ ë¶€ë¶„
                 {
-                    //do something
+                    
                     break;
                 }
-                case 2: //"1.1.2 ÀÏ¹İ È¸¿ø °¡ÀÔ¡° ¸Ş´º ºÎºĞ
+                case 2: //"1.1.2 ì¼ë°˜ íšŒì› ê°€ì…â€œ ë©”ë‰´ ë¶€ë¶„
                 {
                     //do something
                     break;
@@ -73,7 +94,7 @@ void doTask()
 
                 break;
             }
-            case 2: //"1.2 È¸¿ø Å»Åğ¡° ¸Ş´º ºÎºĞ
+            case 2: //"1.2 íšŒì› íƒˆí‡´â€œ ë©”ë‰´ ë¶€ë¶„
             {
                 //do something
                 break;
@@ -83,12 +104,12 @@ void doTask()
         case 2:
             switch (menu_level_2)
             {
-            case 1: //"2.1 ·Î±×ÀÎ¡° ¸Ş´º ºÎºĞ
+            case 1: //"2.1 ë¡œê·¸ì¸â€œ ë©”ë‰´ ë¶€ë¶„
             {
                 //do something
                 break;
             }
-            case 2: //"2.2 ·Î±×¾Æ¿ô¡° ¸Ş´º ºÎºĞ
+            case 2: //"2.2 ë¡œê·¸ì•„ì›ƒâ€œ ë©”ë‰´ ë¶€ë¶„
             {
                 //do something
                 break;
@@ -97,12 +118,12 @@ void doTask()
         case 3:
             switch (menu_level_2)
             {
-            case 1: //"3.1 Ã¤¿ë Á¤º¸ µî·Ï¡° ¸Ş´º ºÎºĞ
+            case 1: //"3.1 ì±„ìš© ì •ë³´ ë“±ë¡â€œ ë©”ë‰´ ë¶€ë¶„
             {
                 //do something
                 break;
             }
-            case 2: //"3.2  µî·ÏµÈ Ã¤¿ë Á¤º¸ Á¶È¸¡° ¸Ş´º ºÎºĞ
+            case 2: //"3.2  ë“±ë¡ëœ ì±„ìš© ì •ë³´ ì¡°íšŒâ€œ ë©”ë‰´ ë¶€ë¶„
             {
                 //do something
                 break;
@@ -111,22 +132,22 @@ void doTask()
         case 4:
             switch (menu_level_2)
             {
-            case 1: //"4.1 Ã¤¿ë Á¤º¸ °Ë»ö¡° ¸Ş´º ºÎºĞ
+            case 1: //"4.1 ì±„ìš© ì •ë³´ ê²€ìƒ‰â€œ ë©”ë‰´ ë¶€ë¶„
             {
                 //do something
                 break;
             }
-            case 2: //"4.2 Ã¤¿ë Áö¿ø¡° ¸Ş´º ºÎºĞ
+            case 2: //"4.2 ì±„ìš© ì§€ì›â€œ ë©”ë‰´ ë¶€ë¶„
             {
                 //do something
                 break;
             }
-            case 3: //"4.3 Áö¿ø Á¤º¸ Á¶È¸¡° ¸Ş´º ºÎºĞ
+            case 3: //"4.3 ì§€ì› ì •ë³´ ì¡°íšŒâ€œ ë©”ë‰´ ë¶€ë¶„
             {
                 //do something
                 break;
             }
-            case 4: //"4.4 Áö¿ø Ãë¼Ò¡° ¸Ş´º ºÎºĞ
+            case 4: //"4.4 ì§€ì› ì·¨ì†Œâ€œ ë©”ë‰´ ë¶€ë¶„
             {
                 //do something
                 break;
@@ -135,7 +156,7 @@ void doTask()
         case 5:
             switch (menu_level_2)
             {
-            case 1: //"5.1 Áö¿ø Á¤º¸ Åë°è¡° ¸Ş´º ºÎºĞ
+            case 1: //"5.1 ì§€ì› ì •ë³´ í†µê³„â€œ ë©”ë‰´ ë¶€ë¶„
             {
                 //do something
                 break;
@@ -145,7 +166,7 @@ void doTask()
         {
             switch (menu_level_2)
             {
-            case 1:   // "6.1. Á¾·á¡° ¸Ş´º ºÎºĞ
+            case 1:   // "6.1. ì¢…ë£Œâ€œ ë©”ë‰´ ë¶€ë¶„
             {
                 program_exit();
                 is_program_exit = 1;
@@ -161,23 +182,23 @@ void doTask()
 
 void join()
 {
-    /*            !!!!!!!       Áß¿ä        !!!!!!!!!
-     * ´Ü¼øÈ÷ ÆÄÀÏÀ» ÅëÇØ ÀÔÃâ·ÂÇÏ´Â ¹æ¹ıÀ» º¸ÀÌ±â À§ÇÑ ÄÚµåÀÌ¹Ç·Î ÀÌ ÇÔ¼ö¿¡¼­ ±×´ë·Î »ç¿ëÇÏ¸é ¾ÈµÊ.
-     * control ¹× boundary class¸¦ ÀÌ¿ëÇØ¼­ ÇØ´ç ±â´ÉÀÌ ±¸ÇöµÇµµ·Ï ÇØ¾ß ÇÔ.
+    /*            !!!!!!!       ì¤‘ìš”        !!!!!!!!!
+     * ë‹¨ìˆœíˆ íŒŒì¼ì„ í†µí•´ ì…ì¶œë ¥í•˜ëŠ” ë°©ë²•ì„ ë³´ì´ê¸° ìœ„í•œ ì½”ë“œì´ë¯€ë¡œ ì´ í•¨ìˆ˜ì—ì„œ ê·¸ëŒ€ë¡œ ì‚¬ìš©í•˜ë©´ ì•ˆë¨.
+     * control ë° boundary classë¥¼ ì´ìš©í•´ì„œ í•´ë‹¹ ê¸°ëŠ¥ì´ êµ¬í˜„ë˜ë„ë¡ í•´ì•¼ í•¨.
      */
 
     char user_type[MAX_STRING], name[MAX_STRING], SSN [MAX_STRING],
         address[MAX_STRING], ID[MAX_STRING], password[MAX_STRING];
 
-    // ÀÔ·Â Çü½Ä : ÀÌ¸§, ÁÖ¹Î¹øÈ£, ID, Password¸¦ ÆÄÀÏ·ÎºÎÅÍ ÀĞÀ½
+    // ì…ë ¥ í˜•ì‹ : ì´ë¦„, ì£¼ë¯¼ë²ˆí˜¸, ID, Passwordë¥¼ íŒŒì¼ë¡œë¶€í„° ì½ìŒ
     fscanf(in_fp, "%s %s %s %s", name, SSN, ID, password);
 
 
-    // ÇØ´ç ±â´É ¼öÇà  
+    // í•´ë‹¹ ê¸°ëŠ¥ ìˆ˜í–‰  
 
 
-    // Ãâ·Â Çü½Ä
-    fprintf(out_fp, "1.1. È¸¿ø°¡ÀÔ\n");
+    // ì¶œë ¥ í˜•ì‹
+    fprintf(out_fp, "1.1. íšŒì›ê°€ì…\n");
     fprintf(out_fp, "%s %s %s %s\n", name, SSN, ID, password);
 }
 
