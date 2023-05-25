@@ -1,3 +1,4 @@
+//í—¤ë” ì„ ì–¸
 #pragma once
 #include <iostream>
 #include <string>
@@ -9,10 +10,10 @@ public:
 	string name, num, ID, PW, usertype;
 
 
-	void startinterface();			//interface ½ÃÀÛ ÇÔ¼ö
-	void selectType();				//È¸»ç/ÀÏ¹İ È¸¿ø ¼±ÅÃ
-	void putInfo();					//Á¤º¸ ÀÔ·Â ÇÔ¼ö
-	void ShowCompleteMessage();		//¿Ï·á¸Ş¼¼Áö Ãâ·Â ÇÔ¼ö
+	void startinterface();			//interface ì‹œì‘ í•¨ìˆ˜
+	void selectType();				//íšŒì‚¬/ì¼ë°˜ íšŒì› ì„ íƒ
+	void putInfo();					//ì •ë³´ ì…ë ¥ í•¨ìˆ˜
+	void ShowCompleteMessage();		//ì™„ë£Œë©”ì„¸ì§€ ì¶œë ¥ í•¨ìˆ˜
 	
 
 };
