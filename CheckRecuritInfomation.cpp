@@ -1,5 +1,10 @@
 #include "CheckRecuritInfomation.h"
+#include "RecuritInfo.cpp"
+//#include <tuple>
 
-void CheckRecuritInfomation::showRecuritInfo()
+//typedef std::tuple<std::string, int, std::string> job_information;
+
+void::showRecuritInfo()
 {
+	RecuritInfo::getInfo();
 }

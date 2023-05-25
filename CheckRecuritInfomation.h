@@ -1,8 +1,10 @@
 #pragma once
+//#include <tuple>
+//typedef std::tuple<std::string, int, std::string> job_information;
+
 class CheckRecuritInfomation
 {
-
 public:
-	void showRecuritInfo();
+	static void showRecuritInfo();
 };
 
